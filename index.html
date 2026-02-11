@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>大ピンチかるた読み上げ</title>
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+
+<body>
+    <!-- セット選択/設定画面 -->
+    <div id="setupScreen" class="screen active">
+        <div class="container">
+            <h1 class="app-title">🎴 大ピンチかるた読み上げ</h1>
+
+            <section class="card">
+                <h2>札の範囲選択</h2>
+
+                <!-- プリセットボタン -->
+                <div class="preset-buttons">
+                    <button class="btn btn-preset" data-start="1" data-end="50">1-50</button>
+                    <button class="btn btn-preset" data-start="51" data-end="100">51-100</button>
+                    <button class="btn btn-preset" data-start="1" data-end="100">1-100</button>
+                </div>
+
+                <!-- カスタム範囲入力 -->
+                <div class="custom-range">
+                    <h3>カスタム範囲</h3>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="startNum">開始番号</label>
+                            <input type="number" id="startNum" min="1" max="100" placeholder="1">
+                        </div>
+                        <span class="separator">〜</span>
+                        <div class="input-field">
+                            <label for="endNum">終了番号</label>
+                            <input type="number" id="endNum" min="1" max="100" placeholder="100">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="rangeError" class="error-message"></div>
+            </section>
+
+            <section class="card">
+                <h2>読み上げ設定</h2>
+
+                <div class="setting-group">
+                    <label>読み上げ間隔（秒）</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="interval" value="1">
+                            <span>1秒</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="interval" value="2" checked>
+                            <span>2秒</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="interval" value="3">
+                            <span>3秒</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label>読み上げ回数</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="repeat" value="1">
+                            <span>1回</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="repeat" value="2" checked>
+                            <span>2回</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="setting-group">
+                    <label>読み上げ速度</label>
+                    <div class="slider-container">
+                        <span class="slider-label">遅い</span>
+                        <input type="range" id="speedSlider" min="0.5" max="2.0" step="0.1" value="1.2"
+                            class="speed-slider">
+                        <span class="slider-label">速い</span>
+                    </div>
+                    <div class="speed-value">速度: <span id="speedValue">1.2</span>x</div>
+                </div>
+            </section>
+
+            <button id="startBtn" class="btn btn-primary btn-large">開始</button>
+        </div>
+    </div>
+
+    <!-- プレイ画面 -->
+    <div id="playScreen" class="screen">
+        <div class="container">
+            <div class="status-bar">
+                <span id="remaining" class="remaining-count">残り: --枚</span>
+            </div>
+
+            <div class="card-display">
+                <div id="cardInitial" class="card-initial">--</div>
+                <div id="cardContent" class="card-content">--</div>
+                <div id="cardLevel" class="card-level">大ピンチレベル --</div>
+            </div>
+
+            <div class="play-speed-control">
+                <label>読み上げ速度</label>
+                <div class="slider-container">
+                    <span class="slider-label">遅い</span>
+                    <input type="range" id="playSpeedSlider" min="0.5" max="2.0" step="0.1" value="1.2"
+                        class="speed-slider">
+                    <span class="slider-label">速い</span>
+                </div>
+                <div class="speed-value">速度: <span id="playSpeedValue">1.2</span>x</div>
+            </div>
+
+            <div class="control-buttons">
+                <button id="nextBtn" class="btn btn-secondary">次へ</button>
+                <button id="replayBtn" class="btn btn-outline">もう一回</button>
+                <button id="endBtn" class="btn btn-danger">終了</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 結果/終了画面 -->
+    <div id="resultScreen" class="screen">
+        <div class="container">
+            <h1 class="result-title">お疲れさまでした！</h1>
+
+            <div class="card result-card">
+                <div class="result-info">
+                    <div class="result-item">
+                        <span class="result-label">未出枚数</span>
+                        <span id="resultRemaining" class="result-value">--枚</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">読んだ枚数</span>
+                        <span id="resultCompleted" class="result-value">--枚</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">総枚数</span>
+                        <span id="resultTotal" class="result-value">--枚</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reset-buttons">
+                <button id="resetSameRangeBtn" class="btn btn-primary btn-large">同じ範囲でやり直す</button>
+                <button id="resetAllBtn" class="btn btn-outline btn-large">Home画面に戻る</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 終了確認モーダル -->
+    <!-- 確認モーダル -->
+    <div id="confirmModal" class="modal-overlay">
+        <div class="modal-content">
+            <p id="confirmMessage" class="modal-message">確認</p>
+            <div class="modal-buttons">
+                <button id="confirmCancelBtn" class="btn btn-primary">キャンセル</button>
+                <button id="confirmOkBtn" class="btn btn-danger">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js?v=6"></script>
+    </script>
+</body>
+
+</html>

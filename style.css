@@ -1,0 +1,555 @@
+:root {
+    --primary-color: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary-color: #10b981;
+    --danger-color: #ef4444;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --card-bg: #ffffff;
+    --border-radius: 16px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.screen {
+    display: none;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.screen.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.app-title {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+}
+
+/* ボタン */
+.btn {
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 48px;
+    touch-action: manipulation;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary:hover {
+    background: #059669;
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+    background: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-large {
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 18px 24px;
+}
+
+.btn-preset {
+    background: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    flex: 1;
+}
+
+.btn-preset:hover,
+.btn-preset.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* プリセットボタン */
+.preset-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* カスタム範囲入力 */
+.custom-range {
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.input-field {
+    flex: 1;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.separator {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    padding-bottom: 12px;
+}
+
+.error-message {
+    color: var(--danger-color);
+    font-size: 0.875rem;
+    margin-top: 8px;
+    min-height: 20px;
+}
+
+/* 設定グループ */
+.setting-group {
+    margin-bottom: 20px;
+}
+
+.setting-group:last-child {
+    margin-bottom: 0;
+}
+
+.setting-group>label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.radio-group {
+    display: flex;
+    gap: 12px;
+}
+
+.radio-label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-height: 48px;
+}
+
+.radio-label input {
+    display: none;
+}
+
+.radio-label span {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.radio-label:has(input:checked) {
+    border-color: var(--primary-color);
+    background: #eef2ff;
+}
+
+.radio-label:has(input:checked) span {
+    color: var(--primary-color);
+}
+
+/* プレイ画面 */
+.status-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.remaining-count {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 12px 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-display {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 40px 24px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.card-initial {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+
+.card-level {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.control-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 結果画面 */
+.result-title {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+.result-card {
+    margin-bottom: 30px;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-label {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.result-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.reset-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* スライドバー */
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.slider-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    min-width: 40px;
+}
+
+.speed-slider {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: #e5e7eb;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.speed-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.speed-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.speed-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.speed-slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.speed-value {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.speed-value span {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+/* プレイ画面の速度コントロール */
+.play-speed-control {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.play-speed-control label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+/* 終了確認モーダル */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 32px;
+    max-width: 360px;
+    width: 90%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-message {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.modal-buttons .btn {
+    flex: 1;
+    font-size: 1rem;
+    padding: 14px 20px;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 480px) {
+
+    .app-title,
+    .result-title {
+        font-size: 1.5rem;
+    }
+
+    .card-initial {
+        font-size: 4rem;
+    }
+
+    .card-content {
+        font-size: 1.25rem;
+    }
+
+    .preset-buttons {
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .separator {
+        text-align: center;
+        padding: 0;
+    }
+}

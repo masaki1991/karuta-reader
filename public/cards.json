@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "level": 1,
+    "initial": "が",
+    "content": "ガムを のんだ"
+  },
+  {
+    "id": 2,
+    "level": 2,
+    "initial": "の",
+    "content": "のんだ ガムに まだ あじが たくさん のこっていた"
+  },
+  {
+    "id": 3,
+    "level": 3,
+    "initial": "こ",
+    "content": "こおりが したに くっついた"
+  },
+  {
+    "id": 4,
+    "level": 4,
+    "initial": "へ",
+    "content": "へんな ひやけを した"
+  },
+  {
+    "id": 5,
+    "level": 5,
+    "initial": "す",
+    "content": "ストローが とれない"
+  },
+  {
+    "id": 6,
+    "level": 6,
+    "initial": "て",
+    "content": "テープの はしが みつからない"
+  },
+  {
+    "id": 7,
+    "level": 7,
+    "initial": "ぺ",
+    "content": "ペンが しみて つくえに ついた"
+  },
+  {
+    "id": 8,
+    "level": 8,
+    "initial": "あ",
+    "content": "あたまに つけた わごむが とれない"
+  },
+  {
+    "id": 9,
+    "level": 9,
+    "initial": "し",
+    "content": "しゃっくりが とまらない"
+  },
+  {
+    "id": 10,
+    "level": 10,
+    "initial": "け",
+    "content": "けずりかすいれが はいってなかった"
+  },
+  {
+    "id": 11,
+    "level": 11,
+    "initial": "ご",
+    "content": "ゴミばこが やまもり"
+  },
+  {
+    "id": 12,
+    "level": 12,
+    "initial": "び",
+    "content": "ビニールぶくろが めくれない"
+  },
+  {
+    "id": 13,
+    "level": 13,
+    "initial": "ぱ",
+    "content": "パンが くろこげ"
+  },
+  {
+    "id": 14,
+    "level": 14,
+    "initial": "し",
+    "content": "シャボンえきを すった"
+  },
+  {
+    "id": 15,
+    "level": 15,
+    "initial": "し",
+    "content": "しょくぱんを がんばって スライスしているうちに ぺしゃんこに なっていた"
+  },
+  {
+    "id": 16,
+    "level": 16,
+    "initial": "わ",
+    "content": "わりばしが うまく われない"
+  },
+  {
+    "id": 17,
+    "level": 17,
+    "initial": "し",
+    "content": "しょうゆを いれすぎた"
+  },
+  {
+    "id": 18,
+    "level": 18,
+    "initial": "ふ",
+    "content": "ふたが ない"
+  },
+  {
+    "id": 19,
+    "level": 19,
+    "initial": "お",
+    "content": "おちた けしゴムが みつからない"
+  },
+  {
+    "id": 20,
+    "level": 20,
+    "initial": "あ",
+    "content": "アイスが とけてきた"
+  },
+  {
+    "id": 21,
+    "level": 21,
+    "initial": "お",
+    "content": "おふろの ごみが すくえない"
+  },
+  {
+    "id": 22,
+    "level": 22,
+    "initial": "じ",
+    "content": "じゅうでんが できていなかった"
+  },
+  {
+    "id": 23,
+    "level": 23,
+    "initial": "ご",
+    "content": "ごはんつぶを ふんだ"
+  },
+  {
+    "id": 24,
+    "level": 24,
+    "initial": "か",
+    "content": "カップめんの おゆが たりない"
+  },
+  {
+    "id": 25,
+    "level": 25,
+    "initial": "せ",
+    "content": "せんたくきの うしろに くつしたが おちた"
+  },
+  {
+    "id": 26,
+    "level": 26,
+    "initial": "た",
+    "content": "たんじょうびケーキが たおれそう"
+  },
+  {
+    "id": 27,
+    "level": 27,
+    "initial": "う",
+    "content": "「う」の もじが はんたいだった"
+  },
+  {
+    "id": 28,
+    "level": 28,
+    "initial": "え",
+    "content": "えだまめが とんだ"
+  },
+  {
+    "id": 29,
+    "level": 29,
+    "initial": "ぎ",
+    "content": "ぎゅうにゅうが こぼれた"
+  },
+  {
+    "id": 30,
+    "level": 30,
+    "initial": "た",
+    "content": "たんじょうびケーキが たおれて イチゴが ころがった"
+  },
+  {
+    "id": 31,
+    "level": 31,
+    "initial": "ぽ",
+    "content": "ポケットから すなが たくさん でてきた"
+  },
+  {
+    "id": 32,
+    "level": 32,
+    "initial": "め",
+    "content": "めんつゆが すごく あまった"
+  },
+  {
+    "id": 33,
+    "level": 33,
+    "initial": "け",
+    "content": "ケチャップが とんだ"
+  },
+  {
+    "id": 34,
+    "level": 34,
+    "initial": "し",
+    "content": "シャワーが みつからない"
+  },
+  {
+    "id": 35,
+    "level": 35,
+    "initial": "ゆ",
+    "content": "ゆでたまごが ボロボロ"
+  },
+  {
+    "id": 36,
+    "level": 36,
+    "initial": "ほ",
+    "content": "ほねを とっていたら ぐちゃぐちゃになった"
+  },
+  {
+    "id": 37,
+    "level": 37,
+    "initial": "あ",
+    "content": "アメリカンドッグが まわる"
+  },
+  {
+    "id": 38,
+    "level": 38,
+    "initial": "ふ",
+    "content": "ふたが しまらない"
+  },
+  {
+    "id": 39,
+    "level": 39,
+    "initial": "た",
+    "content": "たんじょうびケーキの ろうそくが きえない"
+  },
+  {
+    "id": 40,
+    "level": 40,
+    "initial": "せ",
+    "content": "せんせいの メガネが とんだ"
+  },
+  {
+    "id": 41,
+    "level": 41,
+    "initial": "や",
+    "content": "やすみじかんに おいた すいとうが そのまま"
+  },
+  {
+    "id": 42,
+    "level": 42,
+    "initial": "ご",
+    "content": "ごはんが たりない"
+  },
+  {
+    "id": 43,
+    "level": 43,
+    "initial": "し",
+    "content": "しゅくだいノートと じゆうちょうを まちがえた"
+  },
+  {
+    "id": 44,
+    "level": 44,
+    "initial": "は",
+    "content": "はなしを きいてなかった"
+  },
+  {
+    "id": 45,
+    "level": 45,
+    "initial": "ど",
+    "content": "ドアを あけられて さむい"
+  },
+  {
+    "id": 46,
+    "level": 46,
+    "initial": "に",
+    "content": "にくが きれない"
+  },
+  {
+    "id": 47,
+    "level": 47,
+    "initial": "し",
+    "content": "シャンプーが めに はいった"
+  },
+  {
+    "id": 48,
+    "level": 48,
+    "initial": "ふ",
+    "content": "ふくの ビラビラが きになる"
+  },
+  {
+    "id": 49,
+    "level": 49,
+    "initial": "べ",
+    "content": "べんざを あけたまま すわった"
+  },
+  {
+    "id": 50,
+    "level": 50,
+    "initial": "お",
+    "content": "おゆが ない"
+  },
+  {
+    "id": 51,
+    "level": 51,
+    "initial": "ば",
+    "content": "バッグの なかで すいとうが もれた"
+  },
+  {
+    "id": 52,
+    "level": 52,
+    "initial": "む",
+    "content": "むかしの おにぎりが でてきた"
+  },
+  {
+    "id": 53,
+    "level": 53,
+    "initial": "な",
+    "content": "ながしの みずが スプーンで はねた"
+  },
+  {
+    "id": 54,
+    "level": 54,
+    "initial": "れ",
+    "content": "れいとうこが あかない"
+  },
+  {
+    "id": 55,
+    "level": 55,
+    "initial": "い",
+    "content": "いおうとしていたことを わすれた"
+  },
+  {
+    "id": 56,
+    "level": 56,
+    "initial": "な",
+    "content": "なまえが おもいだせない"
+  },
+  {
+    "id": 57,
+    "level": 57,
+    "initial": "け",
+    "content": "けしゴムに さした えんぴつの しんが けしたときに つく"
+  },
+  {
+    "id": 58,
+    "level": 58,
+    "initial": "れ",
+    "content": "れいとうこが しまらない"
+  },
+  {
+    "id": 59,
+    "level": 59,
+    "initial": "さ",
+    "content": "さようならの あいさつで ランドセルの なかみが ぜんぶ でた"
+  },
+  {
+    "id": 60,
+    "level": 60,
+    "initial": "せ",
+    "content": "せんせいに おかあさんと いってしまった"
+  },
+  {
+    "id": 61,
+    "level": 61,
+    "initial": "ぎ",
+    "content": "ギターの なかに おかしが おちた"
+  },
+  {
+    "id": 62,
+    "level": 62,
+    "initial": "ず",
+    "content": "ズボンの ゴムが きれた"
+  },
+  {
+    "id": 63,
+    "level": 63,
+    "initial": "さ",
+    "content": "さなぎから かえった カブトムシが よなかに だっそうして とびまわっている"
+  },
+  {
+    "id": 64,
+    "level": 64,
+    "initial": "き",
+    "content": "きんじょの おばさんが ずっと なまえを まちがえている"
+  },
+  {
+    "id": 65,
+    "level": 65,
+    "initial": "は",
+    "content": "ハエが じぶんにばかり とまる"
+  },
+  {
+    "id": 66,
+    "level": 66,
+    "initial": "あ",
+    "content": "あしが つちだらけ"
+  },
+  {
+    "id": 67,
+    "level": 67,
+    "initial": "ま",
+    "content": "まちがえて シャワーが でた"
+  },
+  {
+    "id": 68,
+    "level": 68,
+    "initial": "う",
+    "content": "うんてんちゅうの くるまの なかに おおきな クモが いる"
+  },
+  {
+    "id": 69,
+    "level": 69,
+    "initial": "じ",
+    "content": "じぶんの いえで トイレが つまった"
+  },
+  {
+    "id": 70,
+    "level": 70,
+    "initial": "お",
+    "content": "おなかが すいて うごけない"
+  },
+  {
+    "id": 71,
+    "level": 71,
+    "initial": "ふ",
+    "content": "ふとんの なかで おならが でた"
+  },
+  {
+    "id": 72,
+    "level": 72,
+    "initial": "お",
+    "content": "おべんとうを わすれた"
+  },
+  {
+    "id": 73,
+    "level": 73,
+    "initial": "わ",
+    "content": "ワサビいりだった"
+  },
+  {
+    "id": 74,
+    "level": 74,
+    "initial": "と",
+    "content": "トイレの かみが ない"
+  },
+  {
+    "id": 75,
+    "level": 75,
+    "initial": "し",
+    "content": "しらない ひとの てを にぎっていた"
+  },
+  {
+    "id": 76,
+    "level": 76,
+    "initial": "ね",
+    "content": "ねむれない"
+  },
+  {
+    "id": 77,
+    "level": 77,
+    "initial": "え",
+    "content": "エスカレーターが ぎゃくだった"
+  },
+  {
+    "id": 78,
+    "level": 78,
+    "initial": "し",
+    "content": "しんしつの てんじょうの もくめが ひとの かおに みえてきた"
+  },
+  {
+    "id": 79,
+    "level": 79,
+    "initial": "ば",
+    "content": "バッグに アリが あつまってきた"
+  },
+  {
+    "id": 80,
+    "level": 80,
+    "initial": "や",
+    "content": "やっぱり さむかった"
+  },
+  {
+    "id": 81,
+    "level": 81,
+    "initial": "じ",
+    "content": "じてんしゃに ハチが とまっている"
+  },
+  {
+    "id": 82,
+    "level": 82,
+    "initial": "か",
+    "content": "かいものが ながい"
+  },
+  {
+    "id": 83,
+    "level": 83,
+    "initial": "い",
+    "content": "イヌが すごく なめてくる"
+  },
+  {
+    "id": 84,
+    "level": 84,
+    "initial": "ま",
+    "content": "まいご"
+  },
+  {
+    "id": 85,
+    "level": 85,
+    "initial": "し",
+    "content": "シロツメクサの かんむりを よくみると アブラムシだらけだった"
+  },
+  {
+    "id": 86,
+    "level": 86,
+    "initial": "し",
+    "content": "しんしつに カが いる"
+  },
+  {
+    "id": 87,
+    "level": 87,
+    "initial": "く",
+    "content": "クモのすに かかった"
+  },
+  {
+    "id": 88,
+    "level": 88,
+    "initial": "と",
+    "content": "トイレに おおきな ガが とまっている"
+  },
+  {
+    "id": 89,
+    "level": 89,
+    "initial": "お",
+    "content": "おきられない"
+  },
+  {
+    "id": 90,
+    "level": 90,
+    "initial": "ふ",
+    "content": "フンを ふんだ"
+  },
+  {
+    "id": 91,
+    "level": 91,
+    "initial": "か",
+    "content": "カばしらに じてんしゃで つっこんだ"
+  },
+  {
+    "id": 92,
+    "level": 92,
+    "initial": "た",
+    "content": "たからものいれが あかない"
+  },
+  {
+    "id": 93,
+    "level": 93,
+    "initial": "と",
+    "content": "トイレが つまった"
+  },
+  {
+    "id": 94,
+    "level": 94,
+    "initial": "お",
+    "content": "おかあさんが イライラしている"
+  },
+  {
+    "id": 95,
+    "level": 95,
+    "initial": "ぷ",
+    "content": "プレゼントを わすれた"
+  },
+  {
+    "id": 96,
+    "level": 96,
+    "initial": "か",
+    "content": "かさが うらがえった"
+  },
+  {
+    "id": 97,
+    "level": 97,
+    "initial": "じ",
+    "content": "じてんしゃが ドミノだおし"
+  },
+  {
+    "id": 98,
+    "level": 98,
+    "initial": "お",
+    "content": "おもったより みじかくなった"
+  },
+  {
+    "id": 99,
+    "level": 99,
+    "initial": "ね",
+    "content": "ネコが ついてくる"
+  },
+  {
+    "id": 100,
+    "level": 100,
+    "initial": "ど",
+    "content": "どしゃぶりなのに かさが ない"
+  }
+]
